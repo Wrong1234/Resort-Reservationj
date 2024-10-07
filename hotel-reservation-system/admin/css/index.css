@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #fbfbfe;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: red; */
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    height: 60px;
+    background-color:#007592;
+    color: white;
+}
+.nav-bar h2{
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.nav-bar a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 10%;
+    color: white;
+}
+.nav-bar a:hover{
+    text-decoration: underline;
+}
+.dashboard{
+    width: 100%;
+    display: block;
+    background-color:#007592;
+    color: white;
+}
+.dashboard-align{
+    width: 100%;
+    height: 655px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.dashboard-align a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    color: white;
+    
+    margin-bottom: 20px;
+}
+.dashboard-align a:hover{
+    text-decoration: underline;
+}
+.main{
+    width: 100%;
+    display: block;
+}
+.db-main{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    font-size: 16px;
+}
+.admin_information{
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+    gap: 10px;
+}
+.available{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+}
+.avail1{
+    background-color: #2772db;
+}
+.avail2{
+    background-color: #f33535;
+}
+.avail3{
+    background-color: #3baea0;
+}
+
+.available a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+.available a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+@media only screen and (min-width: 900px) {
+    .dashboard{
+        width: 300px;
+        height: 100%;
+        background-color:  #007592;
+        font-size: 16px;
+        color: white;
+    }
+}

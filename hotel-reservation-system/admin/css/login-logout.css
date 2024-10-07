@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    background-color: transparent;
+    background: url("../../assets/img/login-img/nature.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.login h1{
+    margin-top: 20px;
+}
+.login-form{
+    width: 450px;
+    height: 430px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 4px #b6c9c8;
+    border-radius: 10px;
+}
+.login-form,i{
+    margin-left: auto;
+}
+
+.email{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid rgb(233, 228, 228);
+    border-radius: 15px;
+    height: 20px;
+    padding: 20px 14px 20px 14px;
+    color: white;
+    margin-top: 20px;
+}
+.password{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(233, 228, 228);
+    border-radius: 15px;
+    height: 20px;
+    margin-top: 10px;
+    padding: 20px 14px 20px 14px;
+    color: white;
+    margin-top: 20px;
+}
+input::placeholder{
+    color: white;
+}
+input{
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.rem-for{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 14px 20px 14px;
+    gap: 70px;
+}
+.rem-for ,label{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+}
+.check{
+    display: flex;
+    gap: 5px;
+}
+.login-form, a{
+    text-decoration: none;
+    color: white;
+}
+
+.login a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    padding: 12px 18px;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: white;
+    font-weight: 600;
+    color: rgb(94, 90, 90);
+    border: 1px solid rgb(233, 228, 228);
+    cursor: pointer;
+}
+.acount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+}

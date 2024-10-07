@@ -1,0 +1,228 @@
+.main-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+.frame{
+  width: 1000px;
+  box-shadow: 0 4px 4px rgba(0 , 0 , 0 , .1);
+  overflow-x: auto; 
+  scrollbar-width: none;
+  margin: 100px;
+}
+.slider{
+ display: flex;
+}
+.slide{
+  width: 32%;
+  height: 300px;
+  /* padding: 10px; */
+  object-fit: cover;
+}
+.btn{
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+.details{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px rgba(0 , 0 , 0 , .2);
+  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.detail{
+  text-align: left;
+  padding: 10px;
+  color: rgb(70, 64, 64);
+}
+.detail p{
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+.detail h2{
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+.select-room{
+  width: 80%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.select-room h2{
+  background-color: #eef7f6;
+  box-shadow: 0 1px 1px 0 rgba(0 , 0 , 0 , .2);
+  padding: 10px;
+  font-weight: bolder;
+}
+.select{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 5px 10px 5px;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.listt{
+  width: 49%;
+  height: 33vh;
+  display: flex;
+  gap: 18px;
+  box-shadow: 0 1px 2px 1px rgba(0 , 0 , 0 , .2);
+  margin-top: 10px;
+}
+.listt1{
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+.listt2{
+  width: 35%;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+}
+.listt2 a{
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+.listt2 ul{
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 60px 0;
+}
+.listt2 ul li{
+  margin: 10px 0;
+  font-family: Arial(serif);
+  font-size: 18px;
+}
+.chatt-btnp{
+  width: 270px;
+  border: 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 0;
+  background-color: #3a98d8;
+  margin-top: 30px;
+}
+.listt1 img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.facility{
+  width: 80%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  box-shadow: 0 1px 1px rgba(0 , 0 , 0 , 0.4);
+  margin-left: 10%;
+  margin-top: 40px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(70, 60, 60);
+}
+.facility h2{
+  margin-top: 30px;
+  padding: 5px;
+}
+.mfacility{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.mfacility h3{
+  margin-top: 30px;
+  padding: 5px;
+}
+.list-mf{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #eef7f6;
+  margin: 15px;
+  padding: 15px;
+}
+
+.mfacility  li{
+  margin: 10px 30px 0 30px;
+  font-size: 20px;
+  
+}
+.list-facility{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.list{
+ width: 30%;
+ height: 230px;
+ text-align: left;
+ margin: 10px 5px 10px 0;
+ padding: 10px;
+ font-family: "Times New Roman", Times, serif;
+}
+.important{
+  width: 80%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  box-shadow: 0 1px 1px rgba(0 , 0 , 0 , .4);
+  margin: 20px auto;
+}
+.important h1{
+  font-size: 25px;
+  /* border: 1px solid red; */
+  padding: 5px;
+  font-weight: bolder;
+  color: rgb(240, 9, 9);
+}
+
+.import{
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  margin-left: 15px;
+  text-align: left;
+  margin: 10px;
+  /* border: 1px solid red; */
+  color: rgb(54, 48, 48);
+}
+.important li{
+  padding: 5px;
+}
+.important h3{
+  text-align: left;
+  margin-left: 0;
+  font-size: 22px;
+}

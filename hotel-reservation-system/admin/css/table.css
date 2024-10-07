@@ -1,0 +1,53 @@
+
+  td , th{
+    padding: 10px 0 10px 0;
+  }
+  table, td, th {
+        border: 1px solid rgb(202, 192, 192);
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 5px 5px 5px 0;
+    background-color: rgb(238, 230, 230);
+    height: 100px;
+  } 
+  td{
+    margin-bottom: auto;
+     text-align: center;
+  }
+  table a{
+    padding: 5px;
+    margin: 5px;
+  }
+  .img{
+    width: 100%;
+  }
+  .edit{
+    padding: 13px 30px;
+    font-size: 18px;
+    border: none;
+    display: inline-block;
+    background-color:#04AA6D; ;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .delete{
+    padding: 13px 30px;
+    font-size: 18px;
+    border: none;
+    display: inline-block;
+    background-color:#f44336 ;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .size-align{
+   width: 100%;
+  
+}
