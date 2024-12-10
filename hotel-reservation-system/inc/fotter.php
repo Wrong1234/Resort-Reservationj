@@ -1,5 +1,5 @@
 <?php 
-  $css_link = '../assets/css/index.css';
+  $css_link = 'assets/css/index.css';
 ?>
 <section class="footer">
     <div class="end_container">

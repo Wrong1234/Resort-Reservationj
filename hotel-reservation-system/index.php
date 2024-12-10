@@ -22,48 +22,95 @@
         });
     </script>
    <div class="main">
-    <div class="main-container">
+    <!-- <div class="main-container">
     <button class="left btn"><i class="fa fa-chevron-left"></i></button>
         <div class="frame">
             <div class="slider">
-                <img class="slide" src="../assets/img/addimg.jpeg">
-                <img class="slide" src="../assets/img/adimg.webp">
-                <img class="slide" src="../assets/img/chatt1.webp">
-                <img class="slide" src="../assets/img/chatt2.webp">
-                <img class="slide" src="../assets/img/chatt3.webp">
-                <img class="slide" src="../assets/img/chatt4.jpg"> 
-                 <img class="slide" src="../assets/img/chatt5.webp"> 
-                <img class="slide" src="../assets/img/chatt6.jpg">
-                <img class="slide" src="../assets/img/chatt7.jpg">
-                <img class="slide" src="../assets/img/chatt8.jpg">
-                <img class="slide" src="../assets/img/chatt9.jpg">
-                <img class="slide" src="../assets/img/chatt9.webp">
-                <img class="slide" src="../assets/img/chatt10.jpg">
-                <img class="slide" src="../assets/img/chatt11.jpg">
-                <img class="slide" src="../assets/img/chatt12.jpg">
-                <img class="slide" src="../assets/img/chattb1.jpg">
-                <img class="slide" src="../assets/img/chattd1.jpg">
-                <img class="slide" src="../assets/img/2nd.webp">
-                <img class="slide" src="../assets/img/3rd.webp">
-                <img class="slide"src="../assets/img/Hotel-N_S.jpg">
-                <img class="slide" src="../assets/img/Hotel-n-s1.jpg">
-                <img class="slide" src="../assets/img/hotel-n-s2.jpg">
-                <img class="slide" src="../assets/img/hotel-n-s3.jpg">
-                <img class="slide" src="../assets/img/hotel-n-s4.jpg">
-                <img class="slide" src="../assets/img/hotel-N-S.jpg">
-                <img class="slide" src="../assets/img/1.jpg">
-                <img class="slide" src="../assets/img/2.jpg">
-                <img class="slide" src="../assets/img/3.jpg">
-                <img class="slide" src="../assets/img/4.jpg">
-                <img class="slide" src="../assets/img/5.jpg">
-                <img class="slide" src="../assets/img/6.jpg">
-                <img class="slide" src="../assets/img/7.jpg">
-                <img class="slide" src="../assets/img/8.jpg">
-                <img class="slide" src="../assets/img/9.jpg">
+                <img class="slide" src="assets/img/addimg.jpeg">
+                <img class="slide" src="assets/img/adimg.webp">
+                <img class="slide" src="assets/img/chatt1.webp">
+                <img class="slide" src="assets/img/chatt2.webp">
+                <img class="slide" src="assets/img/chatt3.webp">
+                <img class="slide" src="assets/img/chatt4.jpg"> 
+                 <img class="slide" src="assets/img/chatt5.webp"> 
+                <img class="slide" src="assets/img/chatt6.jpg">
+                <img class="slide" src="assets/img/chatt7.jpg">
+                <img class="slide" src="assets/img/chatt8.jpg">
+                <img class="slide" src="assets/img/chatt9.jpg">
+                <img class="slide" src="assets/img/chatt9.webp">
+                <img class="slide" src="assets/img/chatt10.jpg">
+                <img class="slide" src="assets/img/chatt11.jpg">
+                <img class="slide" src="assets/img/chatt12.jpg">
+                <img class="slide" src="assets/img/chattb1.jpg">
+                <img class="slide" src="assets/img/chattd1.jpg">
+                <img class="slide" src="assets/img/2nd.webp">
+                <img class="slide" src="assets/img/3rd.webp">
+                <img class="slide"src="assets/img/Hotel-N_S.jpg">
+                <img class="slide" src="assets/img/Hotel-n-s1.jpg">
+                <img class="slide" src="assets/img/hotel-n-s2.jpg">
+                <img class="slide" src="assets/img/hotel-n-s3.jpg">
+                <img class="slide" src="assets/img/hotel-n-s4.jpg">
+                <img class="slide" src="assets/img/hotel-N-S.jpg">
+                <img class="slide" src="assets/img/1.jpg">
+                <img class="slide" src="assets/img/2.jpg">
+                <img class="slide" src="assets/img/3.jpg">
+                <img class="slide" src="assets/img/4.jpg">
+                <img class="slide" src="assets/img/5.jpg">
+                <img class="slide" src="assets/img/6.jpg">
+                <img class="slide" src="assets/img/7.jpg">
+                <img class="slide" src="assets/img/8.jpg">
+                <img class="slide" src="assets/img/9.jpg">
             </div>
         </div>
         <button class="right btn"><i class="fa fa-chevron-right"></i></button>
-    </div>
+    </div> -->
+    <div class="main-container">
+    <!-- <button class="left btn"><i class="fa fa-chevron-left"></i></button> -->
+        <div class="frame">
+            <div class="slider">
+             <div class="imagestyle1">
+                <?php
+                    $sql = "SELECT * FROM image WHERE caption = 'Common 6'";
+                    $result = mysqli_query($conn , $sql);   
+                    while($room = mysqli_fetch_assoc($result)):
+                ?>
+                    <img class="slide" src="admin/images/<?php echo $room['image'];?>" class="gallery-img" onclick="openModal();">
+                <?php endwhile;?>
+             </div>  
+             <div class="imagestyle2">
+                <?php
+                    $sql = "SELECT * FROM image WHERE name = 'Common area'";
+                    $result = mysqli_query($conn , $sql);   
+                    while($room = mysqli_fetch_assoc($result)):
+                ?>
+                    <img class="slide" src="admin/images/<?php echo $room['image'];?>" class="gallery-img" onclick="openModal();">
+                <?php endwhile;?>
+             </div>           
+            </div>
+        </div>  
+        <!-- <button class="right btn"><i class="fa fa-chevron-right"></i></button> -->
+  </div>
+  <div class="modalstyle">
+    <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                <?php
+                    $res = mysqli_query($conn , "select * from image")or die(mysqli_error($conn));
+                    while($addimage = mysqli_fetch_assoc($res)):  
+                ?>       
+                <!-- Slides -->
+                <div class="mySlides">
+                    <img src="admin/images/<?php echo $addimage['image'];?>">
+                </div>
+                <?php endwhile;?>        
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+</div>
+  </div>
+
+
     <div class="details">
         <div class="detail">
             <h2>Mr Resort </h2>
@@ -178,7 +225,7 @@
             ?>
             <div class="listt">
                 <div class="listt1">
-                    <img class="image" src="../admin/images/<?php echo $addroom['image'];?>">
+                    <img class="image" src="admin/images/<?php echo $addroom['image'];?>">
                 </div>   
                 <div class="listt2">
                     <a href="#"><?php echo $addroom['room_name'];?></a>
