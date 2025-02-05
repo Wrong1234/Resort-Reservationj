@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.seeprice{
+    width: 80%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 20px;
+    border-radius: 1rem;
+}
+.price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    box-shadow: 0 2px 2px 0 rgba(0, 0 , 0 , 0.2);
+    padding: 10px;
+    background-color: rgb(246, 252, 252);
+    margin-top: 10px;
+}
+.style{
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+.img{
+    width: 350px;
+    height: 300px;
+    border-radius: 1rem;
+}
+.description{
+    width: 30%; 
+}
+.description p{
+    padding: 5px;
+
+}
+.price1{
+    width: 30%;
+}
+.price1, p, button{
+    padding: 5px;
+}
+.btnp{
+  width: 270px;
+  border: 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 0;
+  background-color: #3a98d8;
+  margin-top: 30px;
+}

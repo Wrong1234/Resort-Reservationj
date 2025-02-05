@@ -25,6 +25,7 @@
                         <a href="#">Payments & Transactions</a>
                         <a href="#">Customer Feedback</a>
                         <a href="#">Email Notifications</a>
+                        <a href="upload_biodata.php">Update Description</a>
                         <a href="setting.php">Setting</a>
                     </div>
                 </div>

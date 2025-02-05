@@ -98,8 +98,6 @@
   <!-- Image gallery -->
   <div class="gallery">
     <img src="images/1.jpg" alt="Image 1" class="gallery-img" onclick="openModal(); currentSlide(1)">
-    <!-- <img src="images/2.jpg" alt="Image 2" class="gallery-img" onclick="openModal(); currentSlide(2)">
-    <img src="images/5.jpg" alt="Image 3" class="gallery-img" onclick="openModal(); currentSlide(3)"> -->
   </div>
 
   <!-- The Modal -->

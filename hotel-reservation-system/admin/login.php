@@ -82,6 +82,6 @@
         </div>
        </div> 
     </form>
-    <script src="showprofile.js"></script>
+    <!-- <script src="showprofile.js"></script> -->
 </body>
 </html>

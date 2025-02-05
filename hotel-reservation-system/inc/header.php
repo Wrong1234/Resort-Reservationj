@@ -32,15 +32,15 @@
                 </div>
             </div>
             <div class="log">
-                <a class="login" href="../admin/login.php">Login</a>
-                <a class="register" href="../admin/register.php" >Register</a>
+                <a class="login" href="admin/login.php">Login</a>
+                <a class="register" href="admin/register.php" >Register</a>
                 <div class="dropdown">
                     <!-- <img class="showprofile" src="../assets/img/login-img/avatar.jpg"> -->
                      <h3><?php echo $_SESSION['username'];?></h3>
                     <div class="dropdown-content">
-                        <a href="../admin/user-profile.php">Profile</a>
+                        <a href="admin/user-profile.php">Profile</a>
                         <a href="#">Setting and privacy</a>
-                        <a href="../admin/login.php">Logout</a>
+                        <a href="admin/login.php">Logout</a>
                     </div>
                 </div>
             </div>

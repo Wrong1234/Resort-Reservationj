@@ -22,50 +22,7 @@
         });
     </script>
    <div class="main">
-    <!-- <div class="main-container">
-    <button class="left btn"><i class="fa fa-chevron-left"></i></button>
-        <div class="frame">
-            <div class="slider">
-                <img class="slide" src="assets/img/addimg.jpeg">
-                <img class="slide" src="assets/img/adimg.webp">
-                <img class="slide" src="assets/img/chatt1.webp">
-                <img class="slide" src="assets/img/chatt2.webp">
-                <img class="slide" src="assets/img/chatt3.webp">
-                <img class="slide" src="assets/img/chatt4.jpg"> 
-                 <img class="slide" src="assets/img/chatt5.webp"> 
-                <img class="slide" src="assets/img/chatt6.jpg">
-                <img class="slide" src="assets/img/chatt7.jpg">
-                <img class="slide" src="assets/img/chatt8.jpg">
-                <img class="slide" src="assets/img/chatt9.jpg">
-                <img class="slide" src="assets/img/chatt9.webp">
-                <img class="slide" src="assets/img/chatt10.jpg">
-                <img class="slide" src="assets/img/chatt11.jpg">
-                <img class="slide" src="assets/img/chatt12.jpg">
-                <img class="slide" src="assets/img/chattb1.jpg">
-                <img class="slide" src="assets/img/chattd1.jpg">
-                <img class="slide" src="assets/img/2nd.webp">
-                <img class="slide" src="assets/img/3rd.webp">
-                <img class="slide"src="assets/img/Hotel-N_S.jpg">
-                <img class="slide" src="assets/img/Hotel-n-s1.jpg">
-                <img class="slide" src="assets/img/hotel-n-s2.jpg">
-                <img class="slide" src="assets/img/hotel-n-s3.jpg">
-                <img class="slide" src="assets/img/hotel-n-s4.jpg">
-                <img class="slide" src="assets/img/hotel-N-S.jpg">
-                <img class="slide" src="assets/img/1.jpg">
-                <img class="slide" src="assets/img/2.jpg">
-                <img class="slide" src="assets/img/3.jpg">
-                <img class="slide" src="assets/img/4.jpg">
-                <img class="slide" src="assets/img/5.jpg">
-                <img class="slide" src="assets/img/6.jpg">
-                <img class="slide" src="assets/img/7.jpg">
-                <img class="slide" src="assets/img/8.jpg">
-                <img class="slide" src="assets/img/9.jpg">
-            </div>
-        </div>
-        <button class="right btn"><i class="fa fa-chevron-right"></i></button>
-    </div> -->
     <div class="main-container">
-    <!-- <button class="left btn"><i class="fa fa-chevron-left"></i></button> -->
         <div class="frame">
             <div class="slider">
              <div class="imagestyle1">
@@ -88,130 +45,31 @@
              </div>           
             </div>
         </div>  
-        <!-- <button class="right btn"><i class="fa fa-chevron-right"></i></button> -->
-  </div>
-  <div class="modalstyle">
-    <div id="myModal" class="modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                <?php
-                    $res = mysqli_query($conn , "select * from image")or die(mysqli_error($conn));
-                    while($addimage = mysqli_fetch_assoc($res)):  
-                ?>       
-                <!-- Slides -->
-                <div class="mySlides">
-                    <img src="admin/images/<?php echo $addimage['image'];?>">
-                </div>
-                <?php endwhile;?>        
-                <!-- Navigation buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-</div>
-  </div>
-
-
+    </div>
     <div class="details">
         <div class="detail">
-            <h2>Mr Resort </h2>
-            <p>Get your trip off to a great start with a stay at this property, which offers free Wi-Fi in all rooms. 
-                Conveniently situated in the Gulshan part of Dhaka, this property puts you close to attractions and interesting dining options.
-                 Don't leave before paying a visit to the famous Shahjalal International Airport. 
-                 Rated with 4 stars, this high-quality property provides guests with access to restaurant, fitness center and spa on-site.</p>
+                <?php
+                    $sql = "SELECT * FROM facilities WHERE number = 'Resort'";
+                    $result = mysqli_query($conn , $sql);   
+                    while($room = mysqli_fetch_assoc($result)):
+                ?>
+                <p><?php echo $room['description']?></p>
+            <?php endwhile;?>
         </div>
     </div>
     <div class="facility">
-        <h2>Facilities of Mr Resort</h2>
-        <div class="mfacility">
-            <h3>Most popular facility</h3>
-             <ul>
-                    <div class="list-mf">
-                    <li>Family rooms</li>
-                    <li>Free parking</li>
-                    <li>Room service</li>
-                    <li>Restaurant</li>
-                    <li>24 hour front desk</li>
-                    <li>Breakfast</li>
-                </div>
-            </ul>   
-            <div class="list-facility">
-                <div class="list">
-                    <h3>Bathroom</h3>
-                    <ul>
-                        <li>Toilet paper</li>
-                        <li>Towels</li>
-                        <li>Slippers</li>
-                        <li>Toilet</li>
-                        <li>Shower</li>
-                        <li>Private bathroom</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Bedroom</h3>
-                    <ul>
-                        <li>linen</li>
-                        <li>wardrobe or cloest</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Outdoors</h3>
-                    <ul>
-                        <li>Balcony</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Living Area</h3>
-                    <ul>
-                        <li>sofa</li>
-                        <li>Seating</li>
-                        <li>Dining Area</li>
-                        <li>Desk</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Media and Technology</h3>
-                    <ul>
-                        <li>Flat-screen TV</li>
-                        <li>Telephone</li>
-                        <li>TV</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Food and Drink</h3>
-                    <ul>
-                        <li>Fruits Additional charge</li>
-                        <li>Breakfast in the room</li>
-                         <li>Cafe</li> 
-                         <li>Free tea/Coffee</li>  
-                         <li>Restaurant</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Reception service</h3>
-                    <ul>
-                        <li>Invoice provided</li>
-                        <li>lockers</li>
-                        <li>24-hour front desk</li>
-
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Cleaning service</h3>
-                    <ul>
-                        <li>Daily housekeeping</li>
-                        <li>Ironing service Additional charge</li>
-                        <li>Dry cleaning Additional charge</li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3>Safety and security</h3>
-                    <ul>
-                        <li>CCTV in common areas</li>
-                        <li>Smoke alarms</li>
-                        <li>24-hour security</li>
-                        <li>Key card access</li>
-
-                    </ul>
+        <h2>Facilities</h2>
+        <div class="facility1">
+                <div class="facility2">
+                      <ul>
+                    <?php
+                        $sql = "SELECT * FROM facilities WHERE number = 'facilities'";
+                        $result = mysqli_query($conn , $sql);   
+                        while($room = mysqli_fetch_assoc($result)):
+                     ?>
+                        <li><?php echo $room['description']?></li>
+                        <?php endwhile;?>
+                      </ul>
                 </div>
             </div>
         </div>

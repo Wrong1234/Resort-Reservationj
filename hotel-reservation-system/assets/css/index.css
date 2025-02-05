@@ -4,11 +4,12 @@
     padding: 0;
 }
 body{
+    width: 100%;
     display: block;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .header{
   display: hidden;
@@ -22,10 +23,12 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
+  text-align: right;
   background-color:  #fff;
-  color: #9c9797;
   box-shadow: 0 4px 4px rgb(211, 203, 203);
+}
+.head-nav h2{
+  font-size: 20px;
 }
 .nav_bar{
   display: flex;
@@ -38,11 +41,9 @@ body{
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* color: #333; */
 }
 .log h3{
-  color: #646262;
-  font-size: 22px;
+  font-size: 18px;
 }
 .logout{
   display: none;
@@ -86,19 +87,19 @@ body{
 .header a{
     text-decoration: none;
     font-size: 18px;
-    color: #161616;
+    color: black;
 }
 
 .dropbtn {
     font-size: 20px;
     border: none;
-    color: #161616;
+    color: black;
   }
   
   .dropdown {
     position: relative;
     display: inline-block;
-    color: #161616;
+    color: black;
   }
   
   .dropdown-content {
@@ -107,7 +108,7 @@ body{
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
-    color: #161616;
+    color: black;
     background-color: #fff;
   }
   
