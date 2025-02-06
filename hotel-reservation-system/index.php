@@ -13,6 +13,8 @@
             const profileShow = document.querySelector('.showprofile');
             const logout = document.querySelector('.logout');
 
+            console.log(loginLink, registerLink, profileShow, logout);
+            
             if (<?php echo isset($_SESSION['username']) ? 'true' : 'false'; ?>) {
                 loginLink.style.display = 'none';
                 registerLink.style.display = 'none';
@@ -90,7 +92,7 @@
                     <ul>
                         <li><?php echo $addroom['description'];?></li>
                     </ul>
-                    <button class="chatt-btnp">Enter dates to see price</button>
+                    <a href="seeprice.php? id=<?php echo $addroom['id'];?>"><button class="chatt-btnp">Enter dates to see price</button></a>
                 </div>
             </div>
             <?php endwhile;?>
@@ -98,35 +100,43 @@
     </div>
         <div class="important">
             <h1>Important - Please Note</h1>
-            <div class="import">
+            <div class="lastimport">
                 <h3>Additional Facts:</h3>
-                <ul>
-                    <li>Extra beds are dependent on the room you choose. Price for an extra bed will be 2975 BDT. </li>
-                    <li>The number of restaurant(s) in the hotel is 2 .</li>
-                    <li>Check in from: 02:00 PM</li>
-                    <li>Check Out until: 12:00 PM</li>
-                    <li>Reception Open Until: 10:00 PM</li>
-                </ul>
+                <div class="import">
+                    <ul>
+                        <li>Extra beds are dependent on the room you choose. Price for an extra bed will be 2975 BDT. </li>
+                        <li>The number of restaurant(s) in the hotel is 2 .</li>
+                        <li>Check in from: 02:00 PM</li>
+                        <li>Check Out until: 12:00 PM</li>
+                        <li>Reception Open Until: 10:00 PM</li>
+                    </ul>
+                </div>
             </div>
-            <div class="import">
-                <h3>Child Policy:</h3>
-                <ul>
-                    <li>Extra beds are dependent on the room you choose. Children above 0 and below 4 stay for free if using existing bedding. If extra bed is requested, additional charge will be added.</li>
-                    <li>Children aged above 5 and below 10 will have to pay 850 BDT.</li>
-                    <li>Traveler aged above 10 will be considered as adult and will have to use an extra bed which will incur additional charge.</li>
-                </ul>
+            <div class="lastimport">
+                <div class="import">
+                    <h3>Child Policy:</h3>
+                    <ul>
+                        <li>Extra beds are dependent on the room you choose. Children above 0 and below 4 stay for free if using existing bedding. If extra bed is requested, additional charge will be added.</li>
+                        <li>Children aged above 5 and below 10 will have to pay 850 BDT.</li>
+                        <li>Traveler aged above 10 will be considered as adult and will have to use an extra bed which will incur additional charge.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="import">
-                <h3>Payment accepted by the property:</h3>
-                <ul>
-                    <li>Visa Master</li>
-                    <li>Amex</li>
-                    <li>Cash</li>
-                    <li>Nogad</li>
-                    <li>Bkash</li>
-                    <li>Rocket</li>
-                </ul>
-            </div>
+                <div class="lastimport">
+                     <h3>Payment accepted by the property:</h3>
+                    <div class="import">
+                        <div class="import1">
+                            <ul>
+                                <li>Visa Master</li>
+                                <li>Amex</li>
+                                <li>Cash</li>
+                                <li>Nogad</li>
+                                <li>Bkash</li>
+                                <li>Rocket</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         </div>
    </div>
    <?php 

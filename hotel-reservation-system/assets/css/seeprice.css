@@ -36,15 +36,25 @@
 .description{
     width: 30%; 
 }
-.description p{
-    padding: 5px;
-
-}
 .price1{
     width: 30%;
 }
+.description li{
+    padding: 5px 0 0 0;
+
+}
+.price1 li{
+    padding: 5px 0 0 0;
+}
 .price1, p, button{
     padding: 5px;
+}
+.description a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+    color: green;
+    margin-top: 20px;
 }
 .btnp{
   width: 270px;

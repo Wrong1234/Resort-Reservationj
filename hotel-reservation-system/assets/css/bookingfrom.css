@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bfrom{
+    width: 60%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    /* margin-top: 50px; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sbfrom input{
+    width: 80%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+}
+.sbfrom input:hover{
+    background-color:#dbf5ef ;
+}
+.sbfrom button{
+  width: 270px;
+  border: 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 0;
+  background-color: #3a98d8;
+  margin-top: 30px;
+}
+.style{
+    width: 80%;
+    margin: auto;
+}
+.bfrom h2{
+    padding-top: 10px;
+}

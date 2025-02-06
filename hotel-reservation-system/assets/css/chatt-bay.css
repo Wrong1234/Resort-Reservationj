@@ -214,22 +214,42 @@ opacity: 0.7;
   font-weight: bolder;
   color: rgb(240, 9, 9);
 }
+.lastimport{
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 .import{
-  font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
-  padding: 10px;
-  margin-left: 15px;
+  font-size: 15px;
   text-align: left;
-  margin: 10px;
-  /* border: 1px solid red;  */
-  color: rgb(54, 48, 48);
+  margin-top: 10px;
+}
+.import1 ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.import1 li{
+  width: 28%;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 .important li{
   padding: 5px;
+  margin-left: 20px;
 }
-.important h3{
+.lastimport h3{
   text-align: left;
-  margin-left: 0;
-  font-size: 22px;
+  font-size: 18px;
+  margin-left: 15px;
+  color: rgb(70, 64, 64);
 } 
